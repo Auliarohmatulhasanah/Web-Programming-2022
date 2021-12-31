@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Picker</title>
+</head>
+<body>
+    
+    <label for="Animals">Animals</label>
+    <select id="Animals">
+        <option value="kupu-kupu">Kupu-kupu</option>
+        <option value="koala">Koala</option>
+        <option value="kelinci">Kelinci</option>
+        <option value="panda">Panda</option>
+        <option value="kunang-kunang">Kunang-Kunang</option>
+    </select>
+    <button onclick="printpicture()">Print Picture</button>
+    
+    <img id="Picture" src="">
+
+    <script>
+        
+        function printpicture() {
+            const Animals = document.getElementById('Animals');
+            const Picture = document.getElementById('Picture');
+
+            if (Animals.value === 'kupu-kupu') {
+                Picture.src = 'https://cdn0-production-images-kly.akamaized.net/o2XToRTg5aEkoSH0-cPRNiyW0u0=/640x853/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/1472147/original/038432500_1484368005-20170114-Kupu-Kupu-AFP6.jpg'
+            }
+
+            if (Animals.value === 'koala') {
+                Picture.src = 'https://awsimages.detik.net.id/community/media/visual/2020/09/16/diprediksi-punah-2050-koala-new-south-wales-berpacu-dengan-waktu-10.jpeg?w=650&q=80'
+            }
+
+            if (Animals.value === 'kelinci'){
+                Picture.src = 'https://ecs7.tokopedia.net/blog-tokopedia-com/uploads/2021/07/1.-Siapkan-Kandang-Yang-Nyaman.jpeg'
+            }
+
+            if (Animals.value === 'panda'){
+                Picture.src = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL_HeObSm1thJeJ3pHbjqG4ZWQ3B_peRjqcg&usqp=CAU'
+            }
+
+            if (Animals.value === 'kunang-kunang'){
+                Picture.src = 'https://asset-a.grid.id/crop/0x0:0x0/x/photo/2021/10/10/webpnet-resizeimage-2021-10-1-20211010043751.jpg'
+            }
+        }
+        
+    </script>
+</body>
+</html>
